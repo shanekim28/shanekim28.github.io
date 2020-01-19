@@ -1,5 +1,15 @@
 ---
+layout: page
 title: About
-layout: post
 ---
-### GitHub Pages
+
+This is my awesome blog.
+Hope you like it!
+
+Reasons:
+- it's great.
+- it's a test.
+
+## Other thoughts
+
+This is great.

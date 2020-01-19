@@ -1,2 +1,8 @@
-title: my-site
-theme: jekyll-theme-midnight
+title:  Shane's Blog
+author:  Shane
+email:  shanekim28@gmail.com
+description:  Shane's wonderful blog
+github_username:  shanekim28
+
+markdown:  kramdown
+theme:  jekyll-theme-midnight
