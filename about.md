@@ -1,5 +1,5 @@
 ---
 title: About
-layout: page
+layout: post
 ---
 ### GitHub Pages
