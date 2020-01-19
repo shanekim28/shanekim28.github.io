@@ -27,7 +27,7 @@ My goal with this concept was to emulate a rope as much as possible, while still
 
 The physics behind the grappling hook are pretty straightforward. When a physics object moves, it has a velocity. If you took high school physics, you'll remember that velocity is a vector, meaning it has both direction and magnitude (oh yeahh!!). When an object swings from a rope (or grappling hook), it moves along a circular arc. Recall that circular motion occurs if an object's velocity is perpendicular to its radius. Keep this in mind, we'll use it later.
 
-![UCM]({{site.baseurl}}/assets/img/Uniform-circular-translation.gif)
+![UCM]({{site.baseurl}}/assets/img/Uniform-cirular-translation.gif)
 
 When an object is in freefall, its velocity vector is straight down. Swinging on a grappling hook is like falling, but spicy. Instead of the velocity vector pointing straight down, the grappling hook constrains the object's downward velocity and redirects it so the object swings. In other words, the velocity is redirected to be solely perpendicular to the grappling hook. Told you we'd use it later.
 
