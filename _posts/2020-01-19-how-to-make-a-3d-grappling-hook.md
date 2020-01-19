@@ -149,3 +149,59 @@ Next, we only want to cancel out our velocity when the current distance to the g
 ## Summary
 
 And just like that, we're now able to swing from an object! Smash that Play button, press the spacebar when the player is looking at something, and gaze upon your mighty physics-ish creation. If you look carefully, you'll notice that the tether can actually go through objects. As of right now, this system is very rudimentary and unrealistic. In the next part, we will be covering how to wrap around objects. It's a fairly more involved process, so be prepared.
+
+*GrappleTut.cs*
+```C#
+using UnityEngine;
+
+public class GrappleTut : MonoBehaviour {
+	private bool tethered = false;
+	private Rigidbody rb;
+	private float tetherLength;
+	private Vector3 tetherPoint;
+
+	void Start() {
+		rb = GetComponent<Rigidbody>();
+	}
+
+	void Update() {
+		if (Input.GetKey(KeyCode.Space)) {
+			if (!tethered) {
+				BeginGrapple();
+			} else {
+				EndGrapple();
+			}
+		}
+	}
+
+	void FixedUpdate() {
+		if (tethered) ApplyGrapplePhysics();
+	}
+
+	void BeginGrapple() {
+		if (Physics.Raycast(transform.position, transform.forward, out RaycastHit hit, Mathf.Infinity)) {
+			tethered = true;
+			tetherPoint = hit.point;
+			tetherLength = Vector3.Distance(tetherPoint, transform.position);
+		}
+	}
+
+	void EndGrapple() {
+		tethered = false;
+	}
+
+	void ApplyGrapplePhysics() {
+		Vector3 directionToGrapple = Vector3.Normalize(tetherPoint - transform.position);
+		float currentDistanceToGrapple = Vector3.Distance(tetherPoint, transform.position);
+
+		float speedTowardsGrapplePoint = Mathf.Round(Vector3.Dot(rb.velocity, directionToGrapple) * 100) / 100;
+
+		if (speedTowardsGrapplePoint < 0) {
+			if (currentDistanceToGrapple > tetherLength) {
+				rb.velocity -= speedTowardsGrapplePoint * directionToGrapple;
+				rb.position = tetherPoint - directionToGrapple * tetherLength;
+			}
+		}
+	}
+}
+```
