@@ -25,7 +25,16 @@ However, I wasn't interested in making 2D games, so I tried to extend my concept
 
 My goal with this concept was to emulate a rope as much as possible, while still maintaining the "gamey" feel to it. It's still partially a physics simulation, but cheats just enough so it doesn't feel TOO real. Because let's face it: reality is boring.
 
-The physics behind the grappling hook are pretty straightforward. When a physics object moves, it has a velocity. If you took high school physics, you'll know that velocity is a vector, meaning it has both direction and magnitude (oh yeahh!!). When an object is in freefall, its velocity vector is straight down. Swinging on a rope is like falling, but spicy. Instead of the velocity vector pointing straight down, the rope constrains the object's downward velocity and redirects it so the object swings.
+The physics behind the grappling hook are pretty straightforward. When a physics object moves, it has a velocity. If you took high school physics, you'll remember that velocity is a vector, meaning it has both direction and magnitude (oh yeahh!!). When an object swings from a rope (or grappling hook), it moves along a circular arc. Recall that circular motion occurs if an object's velocity is perpendicular to its radius. Keep this in mind, we'll use it later.
+
+![UCM]({{site.baseurl}}/assets/img/Uniform-circular-translation.gif)
+
+When an object is in freefall, its velocity vector is straight down. Swinging on a grappling hook is like falling, but spicy. Instead of the velocity vector pointing straight down, the grappling hook constrains the object's downward velocity and redirects it so the object swings. In other words, the velocity is redirected to be solely perpendicular to the grappling hook. Told you we'd use it later.
+
+We can tell how much vertical velocity we need to cancel out by getting the vector dot product bewteen the object's velocity and the direction of the grappling hook. Then, we can cancel out all of the velocity that's going in the opposite direction of the grappling hook, which leaves only the sideways velocity.
+
 ![Frame 1]({{site.baseurl}}/assets/img/tether-1.png)
 ![Frame 2]({{site.baseurl}}/assets/img/tether-2.png)
 ![Frame 3]({{site.baseurl}}/assets/img/tether-3-v2.png)
+
+This method isn't perfect, however, and will result in some drifting of the object, since it's never truly precise. We can cover up our mistakes by simply resetting the object's position to the maximum length of the grappling hook every frame. *Why not just do this in the first place?* I hear you asking. Great question. Remember: position is different from velocity. If we simply reset the position, the velocity is still maintained, which would result in a huge velocity as time goes on.
