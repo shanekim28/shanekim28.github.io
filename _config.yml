@@ -21,3 +21,11 @@ social-email: shanekim28@gmail.com # add your Email address
 # Build settings
 markdown: kramdown
 remote_theme: artemsheludko/flexible-jekyll
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jemoji
+
+paginate: 8
+paginate_path: "/page/:num"
