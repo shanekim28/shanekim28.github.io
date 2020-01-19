@@ -1,7 +1,7 @@
 title: Shane's Great Adventure
 description: > # this means to ignore newlines until "baseurl:"
   Shane Kim's personal programming blog. Feel free to take a look around!
-permalink: '/blog/'
+permalink: ':title/blog/'
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 site-twitter: #if your site has a twitter account, enter it here
