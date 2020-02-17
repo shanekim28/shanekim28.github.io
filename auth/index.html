@@ -13,7 +13,8 @@
 					// https://shanekim28.github.io/auth/?code=AQDS4RQa21PLl9AiRvudujVgUn0pg4_N5HILUJ6QxTylyeM7iBUghuenum4-oTmkw_gGu_go47w6whNfiuf37_7osl8WjvpPjoryZfItq4Ho-YHYZu4V-r0RGaBBHgayvRzvI7FIDtm-0nVNTpEMgrkKAvS-2SM9EucWyr8X6Fo3nvBCk_RXdy9T0zUZwqW_Oix6-XaT_DgoBE3PV-kYnGlgvo7MiVOi1YGZ1R9RTrILCA#_
 					var regexPattern = (?<=\?code=)(.*)(?=#);
 					var code = regexPattern.exec(window.location.href);
-					//window.location.href = "shanekim28.github.io/auth/sendtoserver.php?code=" + code;
+					alert();
+					//window.location.href = "shanekim28.github.io/auth/sendtoserver.php?code=" + code[0];
 					window.location.href = "google.com";
 				}
 			}
