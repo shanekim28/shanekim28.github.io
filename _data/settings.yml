@@ -40,10 +40,13 @@ disqus:
 # About Section
 
 about: >
-  # Portfolio Jekyll Theme
+  # About Me
 
-  This is a personal portfolio theme that I built from the ground up, using the [DevTips Starter Kit](http://devtipsstarterkit.com/) as a foundation for starting, and following closely the amazing tutorial by [Travis Neilson over at DevTips](https://www.youtube.com/watch?v=T6jKLsxbFg4&list=PL0CB3OvPhDA_STygmp3sDenx3UpdOMk7P). You can [check out the demo](lenpaul.github.io/portfolio-jekyll-theme/), and [fork the repository](https://github.com/LeNPaul/portfolio-jekyll-theme/fork), to get started.
-  {% include image.html url="http://www.gratisography.com" image="projects/proj-1/dog.jpg" %}
+  <img src="/assets/img/shane-kim.jpg" alt="Me" width="300" />
+
+  
+  Hi, my name is Shane Kim. I live in San Diego and I'm currently studying CS at UCSD. My hobbies include playing trombone, playing video games, and programming. This site serves as my personal portfolio and blog. Feel free to take a look around!
+
 
 contact: >
   # Contact
