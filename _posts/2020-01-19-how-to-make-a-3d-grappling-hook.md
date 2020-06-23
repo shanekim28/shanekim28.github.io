@@ -1,19 +1,19 @@
 ---
 layout: post
-title: How To Make a 3D Grappling Hook with Wrapping in Unity - Part 1 (Swinging)
+title: How To Make a 3D Grappling Hook in Unity
 date: 2020-01-19 10:04:00 +0300
 description: Creating a 3D grappling hook # Add post description (optional)
 img: how-to-start.jpg # Add image post (optional)
 tags: [Programming, Unity] # add tag
 ---
 
-## Introduction
+#### Introduction
 
 Today, I'm going to be guiding you through the whole process of making a grappling hook in Unity that can wrap and unwrap around objects. From physics to vector projection to mesh edge detection, this is a great project for the aspiring game developer to take a small dive into working through problems logically with Unity as your tool. This project is not for the faint of heart. It requires a creative mind and a willingness to slog through problems.
 
 *Strap in, ladies and gents, we're in for a long one.*
 
-## Prologue
+#### Prologue
 
 Many moons ago, I had purchased the game Gunpoint on Steam. As a musician, I was delighted to hear the original sound track was all jazz, my favorite genre. I made a mental note of the game's designers, after which they slowly faded from memory, never to be heard again. Or so I thought.
 
@@ -25,7 +25,7 @@ However, I wasn't interested in making 2D games, so I tried to extend my concept
 
 **TL;DR I've been experimenting with this off and on for a while and someone needs to appreciate my incredible hard work and dedication.**
 
-## ...And They Say High School Doesn't Teach You Anything
+#### ...And They Say High School Doesn't Teach You Anything
 
 My goal with this concept was to emulate a rope as much as possible, while still maintaining the "gamey" feel to it. It's still partially a physics simulation, but cheats just enough so it doesn't feel TOO real. Because let's face it: reality is boring.
 
@@ -45,7 +45,7 @@ This method isn't perfect, however, and will result in some drifting of the obje
 
 Now that we understand how the physics are going to work, let's finally get to coding it!
 
-## All Day I Dream About Syntax
+#### All Day I Dream About Syntax
 
 Let's create a new class and place it on a player object. I'm calling mine GrappleTut.cs. First things first, we want to check if the player presses the spacebar to start grappling. If they do and they're not already grappling to an object, start grappling. Otherwise, stop grappling. This creates a sort of toggle.
 
@@ -146,7 +146,7 @@ Whew. That was a lot. Let's review what we just did. `directionToGrapple` gets a
 
 Next, we only want to cancel out our velocity when the current distance to the grapple point is longer than the actual tether length. We cancel out our velocity in the opposite direction of the direction to the grapple, and reset our position to account for any errors that canceling out velocity did.
 
-## Summary
+#### Summary
 
 And just like that, we're now able to swing from an object! Smash that Play button, press the spacebar when the player is looking at something, and gaze upon your mighty physics-ish creation. If you look carefully, you'll notice that the tether can actually go through objects. As of right now, this system is very rudimentary and unrealistic. In the next part, we will be covering how to wrap around objects. It's a fairly more involved process, so be prepared.
 
