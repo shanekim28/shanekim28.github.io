@@ -12,6 +12,6 @@ sass:
 
 # Customise atom feed settings (this is where Jekyll-Feed gets configuration information)
 
-title:		           "Shane's Great Adventure"
-description:	       "Powered by Jekyll and GitHub Pages"
-author:              "Paul Le"
+title:		           "Shane's Things"
+description:	       "Shane Kim's Portfolio"
+author:              "Shane Kim"

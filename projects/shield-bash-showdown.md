@@ -4,7 +4,8 @@ title: 'Shield Bash Showdown'
 ---
 ##### <span style="color:red">Project Status: Finished - EOL</span>
 
-{% include image.html url="about:blank" image="projects/shield-bash-showdown/thumb.jpg" %}
+<!--TODO: Add link to demo-->
+{% include image.html text="Demo Unavailable" image="projects/shield-bash-showdown/thumb.jpg" %}
 
 #### About Shield Bash Showdown
 Shield Bash Showdown is a fast-paced singleplayer arena survival game. I made Shield Bash Showdown in just 48 hours in summer of 2018. Having just missed the registration deadline for the Ludum Dare Game Jam by a few days, I reasoned that one doesn't need a game jam to incentivize finishing a project. 
