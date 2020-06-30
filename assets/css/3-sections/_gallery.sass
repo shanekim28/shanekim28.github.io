@@ -2,12 +2,17 @@
     float: left
     margin: 5px
     border: 1px solid #ccc
-    width: 180px
+    max-width: 31%
     &:hover
         border: 1px solid #777
     .image
-        width: 100%
+        max-width: 100%
         height: auto
     .desc  
-        padding: 15px
+        font-size: 0.83em
+        padding: 10px
         text-align: center
+
+@media only screen and (max-width: 480px)
+    .gallery
+        max-width: 28%

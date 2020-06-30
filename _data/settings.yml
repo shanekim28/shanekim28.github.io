@@ -41,8 +41,8 @@ disqus:
 
 about: >
   # About Me
-
-  <img src="/assets/img/shane-kim.jpg" alt="Me" width="300" />
+  
+  <img src="/assets/img/shane-kim.jpg" alt="Me" width="50%" />
 
   
   Hi, my name is Shane Kim. I live in San Diego and I'm currently studying CS at UCSD. My hobbies include playing trombone, playing video games, and programming. This site serves as my personal portfolio and blog. Feel free to take a look around!
