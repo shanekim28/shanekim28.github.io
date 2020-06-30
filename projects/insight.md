@@ -13,9 +13,9 @@ Insight is a mobile app designed to help keep students up to date with a school'
 Insight was made in C# with Unity3D.
 
 <div style="overflow: hidden">
-{% include gallery.html image="projects/insight/calendar.png" desc="Calendar Page" %}
-{% include gallery.html image="projects/insight/home.png" desc="Home Page" %}
-{% include gallery.html image="projects/insight/tiles.png" desc="Tiles Page"%}
+{% include gallery.html image="projects/insight/calendar.jpg" desc="Calendar Page" %}
+{% include gallery.html image="projects/insight/home.jpg" desc="Home Page" %}
+{% include gallery.html image="projects/insight/tiles.jpg" desc="Tiles Page"%}
 </div>
 
 #### Features
