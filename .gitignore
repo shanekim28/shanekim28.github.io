@@ -26,7 +26,7 @@ Temporary Items
 
 ### Jekyll ###
 _site/
-.jekll-cache/
+.jekyll-cache/
 
 ### Sass ###
 .sass-cache
