@@ -1,11 +1,12 @@
+---
 #-------------------------------
 # General Site Settings
 
 menu:
-- {name: 'Projects', url: ''}
-- {name: 'Blog', url: 'pages/blog.html'}
-- {name: 'About', url: 'pages/about.html'}
-- {name: 'Contact', url: 'pages/contact.html'}
+  - { name: "Projects", url: "" }
+  - { name: "Blog", url: "pages/blog.html" }
+  - { name: "About", url: "pages/about.html" }
+  - { name: "Contact", url: "pages/contact.html" }
 
 #-------------------------------
 # SEO Section
@@ -14,8 +15,8 @@ menu:
 
 seo:
   description: "Shane Kim's portfolio powered by Jekyll and GitHub Pages"
-  rel-author: 'https://plus.google.com/u/0/#'
-  rel-publisher: 'https://plus.google.com/u/0/#'
+  rel-author: "https://plus.google.com/u/0/#"
+  rel-publisher: "https://plus.google.com/u/0/#"
 
 #-------------------------------
 # Google Analytics Section
@@ -26,7 +27,7 @@ seo:
 # NOTE: If you want to use Google Analytics for basic web tracking: Just uncomment and enter your UA-Code here.
 
 # If you are not using Google Analytics, please change 'google-ID' to an empty string
-google-analytics-ua: 'UA-112060364-3'
+google-analytics-ua: "UA-112060364-3"
 
 #-------------------------------
 # Disqus Section
@@ -34,19 +35,18 @@ google-analytics-ua: 'UA-112060364-3'
 # Change to true for Disqus comments
 disqus:
   comments: false
-  disqus_shortname: 'thathungrymind'
+  disqus_shortname: "thathungrymind"
 
 #-------------------------------
 # About Section
 
 about: >
   # About Me
-  
+
   <img src="/assets/img/shane-kim.jpg" alt="Me" width="50%" />
 
-  
-  Hi, my name is Shane Kim. I live in San Diego and I'm currently studying Computer Science at UCSD. My hobbies include playing trombone, playing video games, and programming. I aspire to become a software engineer after college. This site serves as my personal portfolio and blog. Feel free to take a look around!
 
+  Hi, my name is Shane Kim. I live in San Diego and I'm currently studying Computer Science at UCSD. My hobbies include playing trombone, playing video games, and programming. I aspire to become a software engineer after college. This site serves as my personal portfolio and blog. Feel free to take a look around!
 
 contact: >
   # Get in Touch
@@ -57,26 +57,35 @@ contact: >
   Email: [shanekim28@gmail.com](mailto:shanekim28@gmail.com)
 
 
-  LinkedIn: [Shane Kim](https://www.linkedin.com/in/shane-kim-0bb4371b0/) 
-
+  LinkedIn: [Shane Kim](https://www.linkedin.com/in/shane-kim-0bb4371b0/)
 
 #-------------------------------
 # Work Section
 
 projects:
-- {name: 'Hibernate', folder: 'hibernate', file: 'projects/hibernate.html'}
-- {name: 'Insight', folder: 'insight', file: 'projects/insight.html'}
-- {name: 'Shield Bash Showdown', folder: 'shield-bash-showdown', file: 'projects/shield-bash-showdown.html'}
-# - {name: 'Project Four', folder: 'proj-4', file: 'projects/proj-4.html'}
+  - {
+      name: "Stock Stickers",
+      folder: "stock-stickers",
+      file: "projects/stock-stickers.html",
+    }
+  - { name: "Hibernate", folder: "hibernate", file: "projects/hibernate.html" }
+  - { name: "Insight", folder: "insight", file: "projects/insight.html" }
+  - {
+      name: "Shield Bash Showdown",
+      folder: "shield-bash-showdown",
+      file: "projects/shield-bash-showdown.html",
+    }
 # - {name: 'Project Five', folder: 'proj-5', file: 'projects/proj-5.html'}
 
 #-------------------------------
 # Contact Section
 
 social:
-- {icon: 'instagram', link: 'https://www.instagram.com/shanekim28'}
-- {icon: 'github', link: 'https://www.github.com/shanekim28'}
-- {icon: 'linkedin', link: 'https://www.linkedin.com/in/shane-kim-0bb4371b0/'}
-- {icon: 'envelope', link: 'mailto:shanekim28@gmail.com'}
-
+  - { icon: "instagram", link: "https://www.instagram.com/shanekim28" }
+  - { icon: "github", link: "https://www.github.com/shanekim28" }
+  - {
+      icon: "linkedin",
+      link: "https://www.linkedin.com/in/shane-kim-0bb4371b0/",
+    }
+  - { icon: "envelope", link: "mailto:shanekim28@gmail.com" }
 # social network icons available: 'twitter' / 'facebook' / 'github' / 'pinterest' 'google-plus' / 'linkedin' / 'youtube' / 'instagram' / 'dribbble' / 'behance' / 'soundcloud' / 'vine'
