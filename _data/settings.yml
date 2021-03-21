@@ -64,6 +64,11 @@ contact: >
 
 projects:
   - {
+      name: "Follow the Whales",
+      folder: "follow-the-whales",
+      file: "projects/follow-the-whales.html",
+    }
+  - {
       name: "Stock Stickers",
       folder: "stock-stickers",
       file: "projects/stock-stickers.html",
