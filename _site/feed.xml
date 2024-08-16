@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Shane Kim</title>
+    <description>I&apos;m a software engineer from San Diego with a passion for creating things.</description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 15 Aug 2024 20:18:05 -0700</pubDate>
+    <lastBuildDate>Thu, 15 Aug 2024 20:18:05 -0700</lastBuildDate>
+    <generator>Jekyll v3.10.0</generator>
+    
+      <item>
+        <title>Chords of Chaos</title>
+        <description>
+</description>
+        <pubDate>Fri, 31 May 2024 17:00:00 -0700</pubDate>
+        <link>http://localhost:4000/development/design/2024/05/31/chords-of-chaos.html</link>
+        <guid isPermaLink="true">http://localhost:4000/development/design/2024/05/31/chords-of-chaos.html</guid>
+        
+        <category>C++</category>
+        
+        <category>OpenGL</category>
+        
+        <category>FMOD</category>
+        
+        
+        <category>development</category>
+        
+        <category>design</category>
+        
+      </item>
+    
+      <item>
+        <title>Procedural Terrain Generator</title>
+        <description>
+</description>
+        <pubDate>Tue, 30 Apr 2024 17:00:00 -0700</pubDate>
+        <link>http://localhost:4000/development/design/2024/04/30/procedural-terrain.html</link>
+        <guid isPermaLink="true">http://localhost:4000/development/design/2024/04/30/procedural-terrain.html</guid>
+        
+        <category>Unity3D</category>
+        
+        <category>C#</category>
+        
+        
+        <category>development</category>
+        
+        <category>design</category>
+        
+      </item>
+    
+      <item>
+        <title>Follow the Whales</title>
+        <description>
+</description>
+        <pubDate>Sun, 13 Dec 2020 16:00:00 -0800</pubDate>
+        <link>http://localhost:4000/development/design/2020/12/13/follow-the-whales.html</link>
+        <guid isPermaLink="true">http://localhost:4000/development/design/2020/12/13/follow-the-whales.html</guid>
+        
+        <category>ReactNative</category>
+        
+        <category>Expo</category>
+        
+        
+        <category>development</category>
+        
+        <category>design</category>
+        
+      </item>
+    
+      <item>
+        <title>Stock Stickers</title>
+        <description>
+</description>
+        <pubDate>Thu, 12 Nov 2020 16:00:00 -0800</pubDate>
+        <link>http://localhost:4000/development/2020/11/12/stock-stickers.html</link>
+        <guid isPermaLink="true">http://localhost:4000/development/2020/11/12/stock-stickers.html</guid>
+        
+        <category>ReactNative</category>
+        
+        <category>Expo</category>
+        
+        
+        <category>development</category>
+        
+      </item>
+    
+  </channel>
+</rss>
